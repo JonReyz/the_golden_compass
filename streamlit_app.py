@@ -3,7 +3,7 @@ import streamlit as st
 import streamlit_authenticator as stauth
 import yaml
 from yaml.loader import SafeLoader
-
+from streamlit_authenticator.utilities.hasher import Hasher
 
 def load_chat_component():
     with st.sidebar:
@@ -39,6 +39,10 @@ def load_chat_component():
 with open('login.yaml') as file:
     config = yaml.load(file, Loader=SafeLoader)
 
+
+# hashed_passwords = Hasher(['123456', 'def']).generate()
+
+# print(hashed_passwords)
 
 authenticator = stauth.Authenticate(
     config['credentials'],

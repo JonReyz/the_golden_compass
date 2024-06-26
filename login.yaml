@@ -3,11 +3,11 @@ credentials:
     admin:
       email: j@innovationintelligence.ai
       name: Admin
-      password: 123456 # To be replaced with hashed password
+      password: $2b$12$dd86XMwF5N9I/xKq1GUwEeld9SwRV3vcV.vrQbTRr823k06WQwhw # To be replaced with hashed password
     rbriggs:
       email: rbriggs@gmail.com
       name: Rebecca Briggs
-      password: def # To be replaced with hashed password
+      password: $2b$12$ApO6WhWZLlAwURaqzMeSYOP/Hu3aS9wnDdBz2txafq7lRtEj6DlbW # To be replaced with hashed password
 cookie:
   expiry_days: 30
   key: random_signature_key # Must be string

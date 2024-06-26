@@ -10,4 +10,3 @@ trubrics>=1.4.3
 streamlit-feedback
 langchain-community
 streamlit_authenticator
-yaml

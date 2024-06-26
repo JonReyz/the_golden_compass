@@ -36,7 +36,7 @@ def load_chat_component():
 
 
 
-with open('../login.yaml') as file:
+with open('login.yaml') as file:
     config = yaml.load(file, Loader=SafeLoader)
 
 
@@ -49,8 +49,7 @@ authenticator = stauth.Authenticate(
 )
 
 
-name, authentication_status, username = authenticator.login('Login', 'main')
-
+name, authentication_status, username = authenticator.login(location ="main")
 
 if st.session_state["authentication_status"]:
     authenticator.logout()
